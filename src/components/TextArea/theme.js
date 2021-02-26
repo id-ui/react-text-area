@@ -3,6 +3,8 @@ export const colors = {
     border: '#B4B4B4',
     color: '#313131',
     background: 'inherit',
+    outline: '#A569ED',
+    placeholder: '#B4B4B4',
   },
   disabled: {
     border: '#EFEFEF',
@@ -13,8 +15,6 @@ export const colors = {
     border: '#C02908',
     color: '#C02908',
     background: '#FDDCDC',
-  },
-  focused: {
-    border: '#A569ED',
+    placeholder: '#c34328',
   },
 };

@@ -15,12 +15,12 @@ export const Container = styled.textarea`
       color: ${colors[state].color};
       border-color: ${colors[state].border};
       background-color: ${colors[state].background};
+      &:focus-within {
+        border-color: ${colors[state].outline || colors[state].border};
+      }
+      &::placeholder {
+        color: ${colors[state].placeholder || colors.default.placeholder};
+      }
     `
   )}
-  ${(ifProp({ state: 'default' }),
-  css`
-    &:focus-within {
-      border-color: ${prop('colors.focused.border')};
-    }
-  `)}
 `;

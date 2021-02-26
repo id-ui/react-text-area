@@ -53,6 +53,8 @@ const colorsSetShape = PropTypes.shape({
   color: PropTypes.string,
   background: PropTypes.string,
   border: PropTypes.string,
+  outline: PropTypes.string,
+  placeholder: PropTypes.string,
 });
 
 TextArea.propTypes = {
@@ -68,9 +70,6 @@ TextArea.propTypes = {
     default: colorsSetShape,
     disabled: colorsSetShape,
     error: colorsSetShape,
-    focused: PropTypes.shape({
-      border: PropTypes.string,
-    }),
   }),
 };
 

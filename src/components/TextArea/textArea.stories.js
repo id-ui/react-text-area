@@ -48,6 +48,7 @@ export default {
         },
       },
     },
+    placeholder: { control: 'text', description: 'TextArea placeholder' },
     className: { control: 'text', description: 'TextArea className' },
     maxHeight: { control: 'text', description: 'max TextArea height' },
     rows: {
