@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import useContentHeight from './hooks/useContentHeight';
 import { Container } from './styled';
@@ -21,12 +21,9 @@ function TextArea({
     canResize: autoHeight,
   });
 
-  const handleChange = useCallback(
-    (e) => {
-      onChange(e.target.value);
-    },
-    [onChange]
-  );
+  const handleChange = (e) => {
+    onChange(e.target.value);
+  };
 
   const state = disabled ? 'disabled' : withError ? 'error' : 'default';
 
